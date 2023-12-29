@@ -888,6 +888,32 @@ footer a:hover {
 
 /* Start Media Query */
 
+@media (max-width:1024px) {
+    #product1 .pro-container {
+        justify-content: center;
+    }
+    #product1 .pro {
+        margin: 15px;
+    }
+    #feature {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    #feature .fe-box {
+    margin-left: 50px;
+    }
+    #banner3 {
+        justify-content: center; 
+    }
+    #banner3 .banner-box {
+        width: 40%;
+        margin-left: 10px;
+    }
+
+}
+
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px;
@@ -1001,11 +1027,13 @@ footer a:hover {
         background-position: 55%;
     }
     #feature {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
     }
     #feature .fe-box {
         width: 155px;
-        margin: 0 0 15px 0;
+        margin: 0 0 15px 20px;
     }
     #product1 .pro {
         width: 100%;
